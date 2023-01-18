@@ -1,0 +1,15 @@
+name: "yaml reader"
+description: "YAML file reader."
+author: "Gert Drapers"
+branding:
+  icon: package
+  color: red
+inputs:
+  filename:
+    description: "Filepath to yaml file."
+    required: true
+    default: ""
+runs:
+  using: docker
+  image: docker://ghcr.io/gertd/yaml-reader:latest
+  entrypoint: /app/gh-action-entrypoint.sh

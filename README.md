@@ -1,2 +1,3 @@
 # yaml-reader-action
-GH Action YAML reader
+
+YAML file reader GitHub Action
