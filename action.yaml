@@ -5,11 +5,15 @@ branding:
   icon: package
   color: red
 inputs:
-  filename:
-    description: "Filepath to yaml file."
+  file:
+    description: "Path to YAML input file."
     required: true
     default: ""
+  json:
+    description: "Output YAML as JSON variable."
+    required: false
+    default: "false"
 runs:
   using: docker
-  image: docker://ghcr.io/gertd/yaml-reader:test
+  image: docker://ghcr.io/gertd/yaml-reader:1
   entrypoint: /app/gh-action-entrypoint.sh
