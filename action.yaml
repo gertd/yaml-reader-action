@@ -15,5 +15,5 @@ inputs:
     default: "false"
 runs:
   using: docker
-  image: docker://ghcr.io/gertd/yaml-reader:test
+  image: docker://ghcr.io/gertd/yaml-reader:1.0
   entrypoint: /app/gh-action-entrypoint.sh
